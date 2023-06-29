@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); /*c*//*жирненький*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');/*font-family: 'Montserrat', sans-serif;*//*тонкий*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    height: 7vh;
+    width: 100vw;
+    background-color: #80d7ff;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+header {
+    position: fixed;
+    top: 0;
+   /* opacity: 1;*/
+    transition: opacity .5s ease-in-out;
+}    
+
+header .wrapper{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.header__icon{
+    text-transform:capitalize;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.med{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.header__list{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 50%;
+    line-height: 5vh;
+    color: #010201;
+    font-family: 'Roboto Mono', monospace;
+    text-transform:capitalize;
+    font-size: 18px;
+}
+
+.header__link{
+    transition: 0.3s;
+}
+
+.header__link:hover{
+    color: #a415c8;
+    
+}
+
+.header__item__btn_1{
+    width: 10%;
+    height: 80%;
+    width: 158px;
+    height: 44px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1.5px solid #a415c8;
+    background-color: transparent;
+    transition: .3s;
+    color: #a415c8;
+    border-radius: 15px 0 0 15px;
+}
+
+.header__item__btn_2{
+    width: 10%;
+    height: 80%;
+    width: 158px;
+    height: 44px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1.5px solid #a415c8;
+    background-color: transparent;
+    transition: .3s;
+    color: #a415c8;
+    border-radius: 0 15px 15px 0;
+}
+
+.header__item__btn_1:hover{
+    cursor: pointer;
+
+    color: white;
+    background-color: #a415c8;
+}
+
+.header__item__btn_2:hover{
+    cursor: pointer;
+
+    color: white;
+    background-color: #a415c8;
+}
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .wrapper{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 448px;
+    height: 407px;
+}
+
+.home_text{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 549px;
+    height: 370px;
+}
+
+h1{
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.home__purple{
+    color: #dd56ff;
+}
+
+p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #7f7171;
+    margin-top: 15px;
+}
+
+.tegA{
+    width: 15vw;
+    height: 7vh;
+    /*border: 2px solid rgb(255, 255, 255);*/
+    position: absolute;
+    top: 80%;
+    left: 37%;
+}
+
+.tegA a{
+    font-size: 25px;
+}
+
+.tegA:hover{
+    cursor: pointer;
+}
+
+/*a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px; 
+    color: #ffffff;
+    text-align: center;
+}*/
+
+.container {
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 101vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+}
+
+.circle-container {
+    position: relative;
+    width: 650px;
+    height: 650px;
+    /*border: 2px solid #000;*/
+    border-radius: 50%;
+    margin: 50px auto;
+
+}
+
+.circle-item {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%) rotate(0deg) translate(325px) rotate(0deg);
+}
+
+.circle-item:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(45deg) translate(325px) rotate(-45deg);
+}
+
+.circle-item:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(90deg) translate(325px) rotate(-90deg);
+}
+
+.circle-item:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(135deg) translate(325px) rotate(-135deg);
+}
+
+.circle-item:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(180deg) translate(325px) rotate(-180deg);
+}
+
+.circle-item:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(225deg) translate(325px) rotate(-225deg);
+}
+.circle-item:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(270deg) translate(325px) rotate(-270deg);
+}
+.circle-item:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(315deg) translate(325px) rotate(-315deg);
+}
+
+.circle-item:hover{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    /*border: 1px solid #000;  добавляем границу, чтобы кнопка оставалась видимой */
+    color: rgb(255, 255, 255); /* задаем цвет текста /
+    padding: 10px 20px; / задаем отступы /
+    text-align: center; / задаем выравнивание текста по центру */  
+}
+
+/*header {
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}*/
+
+.modal {
+    overflow: hidden;
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(56, 53, 53, 0.5);/*rgba(0,0,0,0.4);*/
+
+}
+  
+.modal-content {
+    background-color: #3b3b3b;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+  
+.phrases {
+    margin-top: 10px;
+    color: #ffffff;
+}
+  
+.phrases a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+h2{
+    color: #ffffff;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
