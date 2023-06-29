@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/premium-vector/a-coloured-geometric-background-liquid-coloured-background-gradient-background-of-blue-purple-pink_647322-231.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    width: 30vw;
+    height: 50vh;
+    border: none;
+    border-radius: 1vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2vw);
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#control, #rep {
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-image: url(https://img.icons8.com/material-outlined/256/visible.png);
+    background-size: cover;
+    filter: invert(1);
+}
+
+#control.view, #rep.view {
+    background-image: url(https://img.icons8.com/material-outlined/256/closed-eye.png);
+    background-size: cover;
+}
+
+#generate {
+    position: absolute;
+    top: 0;
+    right: 3vw;
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-image: url(https://img.icons8.com/ios-glyphs/256/refresh.png);
+    background-size: cover;
+    filter: invert(1);
+}
+
+input {
+    border: none;
+    border-bottom: 0.1vw solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    background: none;
+    text-transform: uppercase;
+    font-size: 2vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input[type='button'] {
+    border: none;
+    border-radius: 0.5vw;
+    padding: 1vw 3vw;
+    background: rgba(258, 258, 258, 0.3);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: 2vw;
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+    background: rgba(207, 245, 252, 0.3);
+}
+
+input[type='button']:active {
+    transform: scale(0.95);
+}
+

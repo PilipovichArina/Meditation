@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медитация</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/vicons.png" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+       <div class="wrapper">
+           <div class="header__icon">
+                  <img src="img/icon.png" alt="#">
+                <span class="med">Медитация</span> 
+              </div>
+                <ul class="header__list">
+                  
+                <li class="header__item"><a href="#" class="header__link" onclick="openModalm()">Медитация</a></li>
+                    <div id="meditModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModalm()">&times;</span>
+                        <h2>Категории</h2>
+                        <div class="phrases">
+                          <a href="#" id="a1">Техники дыхания</a>
+                          <a href="#" id="a2">Медитация осознанности</a>
+                          <a href="#" id="a3">Музыка для медитации</a>
+                          <a href="#" id="a4">Управляемая медитация</a>
+                        </div>
+                        <h2>Популярное</h2>
+                        <div class="phrases">
+                          <a href="#" id="a5">Медитации для сна</a>
+                          <a href="#" id="a6"> Утренняя медитация</a>
+                          <a href="#" id="a7">Техники расслабления</a>
+                          <a href="#">Медитация для снижения уровня тревоги</a>
+
+                        </div>
+                      </div>
+                    </div> 
+                    <li class="header__item"><a href="#" class="header__link" onclick="openModals()">Сон</a></li>
+                    <div id="sonModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModals()">&times;</span>
+                        <h2>Категории</h2>
+                        <div class="phrases">
+                          <a href="#" >Музыка для сна</a>
+                          <a href="#" >Как заснуть</a>
+                          <a href="#" >Звуки для сна</a>
+                          <a href="#" > Почему я постоянно чувствую усталость?</a>
+                        </div>
+                        <h2>Популярное</h2>
+                        <div class="phrases">
+                          <a href="#" >Дневной сон </a>
+                          <a href="#" >Как улучшить качество сна</a>
+                          <a href="#" >Гигиена сна</a>
+                        </div>
+                      </div>
+                    </div>
+                    <li class="header__item"><a href="#" class="header__link" onclick="openModalo()">Осознанность</a></li>
+                    <div id="osoznModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModalo()">&times;</span>
+                        <h2>Категория</h2>
+                        <div class="phrases">
+                          <a href="#">Как практиковать осознанность</a>
+                          <a href="#">Что такое осознанность?</a>
+                          <a href="#">Осознанное дыхание</a>
+                          <a href="#">Преимущества осознанности</a>
+                        </div>
+                        <h2>Популярное</h2>
+                        <div class="phrases">
+                          <a href="#">Осознанность в обучении</a>
+                                                    <a href="#">Осознанное питание</a>
+                        </div>
+                      </div>
+                    </div>
+                    <li class="header__item"><a href="#" class="header__link" onclick="openModalk()">Контакты</a></li>
+                    <div id="contaktModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModalk()">&times;</span>
+                        <h2>Контакты</h2>
+                        <div class="phrases">
+                          <a href="#">+375(67)889-99-11</a>
+                          <a href="#">+375(77)889-99-11</a>
+                        </div>
+                      </div>
+                    </div>
+                <button id="buttonv" class="header__item__btn_1">Войти</button>
+                <button id="buttonz"  class="header__item__btn_2">Зарегистрироваться</button>
+                 </ul>
+        </div>
+    
+    </header>
+    <main>
+      <section class="home">
+        <div class="circle"></div>
+        <div class="wrapper">
+          <div class="home__img">
+            <img src="img/medit.jpg" alt="#">
+          </div>
+          <div class="home__text">
+            <h1>Ежедневная поддержка вашего <span class="home__purple">психологического здоровья</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia a porro ullam molestiae illum.</p>
+          </div>
+          <div class="tegA"><a href="#container">Медитация</a>
+          </div>
+        </div>
+      </section>
+      <section class="container" id="container" aria-label="container" >
+        <div class="circle-container">
+          <div class="circle-item"><button id="button0"><img src="img/space.png" alt="#" width="64" height="64"> Космос</button></div>
+          <div class="circle-item"><button id="button1"><img src="img/cat.png" alt="#" width="64" height="64"> Животные</button></div>
+          <div class="circle-item"><button id="button2"><img src="img/house.png" alt="#" width="64" height="64"> Дом</button></div>
+          <div class="circle-item"><button id="button3"><img src="img/vinyls.png" alt="#" width="64" height="64"> Музыка (клас.)</button></div>
+          <div class="circle-item"><button id="button4"><img src="img/thunderstorm.png" alt="#" width="64" height="64"> Непогода</button></div>
+          <div class="circle-item"><button id="button5"><img src="img/forest.png" alt="#" width="64" height="64"> Лес</button></div>
+          <div class="circle-item"><button id="button6"><img src="img/adventure.png" alt="#" width="64" height="64"> Путешествие</button></div>
+          <div class="circle-item"><button id="button7"><img src="img/tiktok.png" alt="#" width="64" height="64"> ТикТок</button></div>
+        </div>
+      </section>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
